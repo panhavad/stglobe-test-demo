@@ -1,0 +1,35 @@
+<head>
+  <style> body { margin: 0; } </style>
+
+  <script src="https://unpkg.com/globe.gl"></script>
+  <!--<script src="../../dist/globe.gl.js"></script>-->
+</head>
+
+<body>
+  <div id="globeViz"></div>
+
+  <script>
+    const world = Globe()
+      (document.getElementById('globeViz'))
+      .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-night.jpg')
+      .pointOfView({ lat: 15.0, lng: 160.0 , altitude: 3 }, 1000)
+      .polygonCapColor(feat => 'rgba(200, 0, 0, 0.6)')
+      .polygonSideColor(() => 'rgba(0, 100, 217, 0.2)')
+      .polygonLabel(({ properties: d }) => `
+          <b>${d.ADMIN} (${d.ISO_A2})</b> <br />
+        `);
+
+    // Auto-rotate
+    world.controls().autoRotate = true;
+    world.controls().autoRotateSpeed = 1.8;
+
+    fetch('./dataset.geojson').then(res => res.json()).then(countries => {
+      world.polygonsData(countries.features.filter(d => d.properties.ISO_A2 !== 'AQ'));
+
+      setTimeout(() => world
+        .polygonsTransitionDuration(4000)
+        .polygonAltitude(feat => Math.max(0.1, Math.sqrt(+feat.properties.POP_EST) * 2e-5))
+      , 1000);
+    });
+  </script>
+</body>
