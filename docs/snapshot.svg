@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#161b22"/></linearGradient></defs>
+<rect width="1200" height="640" rx="18" fill="url(#bg)"/>
+<rect width="1200" height="44" rx="18" fill="#21262d"/><rect y="26" width="1200" height="18" fill="#21262d"/>
+<circle cx="28" cy="22" r="7" fill="#ff5f56"/><circle cx="52" cy="22" r="7" fill="#ffbd2e"/><circle cx="76" cy="22" r="7" fill="#27c93f"/>
+<text x="600" y="28" fill="#8b949e" font-size="15" text-anchor="middle">github.com/panhavad/stglobe-test-demo</text>
+<rect x="40" y="76" width="6" height="58" rx="3" fill="#e34c26"/>
+<text x="62" y="118" fill="#f0f6fc" font-size="40" font-weight="700">STGlobe - 3D Population Globe Demo</text>
+<text x="62" y="168" fill="#c9d1d9" font-size="20">Interactive 3D world globe demo with globe.gl and three.js - auto-rotating Earth with</text>
+<text x="62" y="198" fill="#c9d1d9" font-size="20">GeoJSON country polygons extruded by population.</text>
+<rect x="40" y="270" width="520" height="330" rx="12" fill="#0d1117" stroke="#30363d"/>
+<text x="62" y="302" fill="#8b949e" font-size="15" font-weight="600">PROJECT STRUCTURE</text>
+<text x="62" y="334" fill="#7ee787" font-size="17" font-family="Consolas, monospace">├── dataset.geojson</text>
+<text x="62" y="361" fill="#7ee787" font-size="17" font-family="Consolas, monospace">├── dataset_original.geojson</text>
+<text x="62" y="388" fill="#7ee787" font-size="17" font-family="Consolas, monospace">└── index.html</text>
+<rect x="590" y="270" width="570" height="230" rx="12" fill="#0d1117" stroke="#30363d"/>
+<text x="612" y="302" fill="#8b949e" font-size="15" font-weight="600">HOW IT WORKS</text>
+<rect x="612" y="322" width="160" height="56" rx="10" fill="#161b22" stroke="#e34c26"/>
+<text x="692" y="356" fill="#e6edf3" font-size="15" text-anchor="middle">index.html</text>
+<path d="M774 350 h18" stroke="#8b949e" stroke-width="2"/><path d="M792 350 l-7 -5 v10 z" fill="#8b949e"/>
+<rect x="794" y="322" width="160" height="56" rx="10" fill="#161b22" stroke="#e34c26"/>
+<text x="874" y="356" fill="#e6edf3" font-size="15" text-anchor="middle">globe.gl</text>
+<path d="M956 350 h18" stroke="#8b949e" stroke-width="2"/><path d="M974 350 l-7 -5 v10 z" fill="#8b949e"/>
+<rect x="976" y="322" width="160" height="56" rx="10" fill="#161b22" stroke="#e34c26"/>
+<text x="1056" y="356" fill="#e6edf3" font-size="15" text-anchor="middle">dataset.geojson</text>
+<path d="M1056 380 v12 H692 v14" stroke="#8b949e" stroke-width="2" fill="none"/>
+<rect x="612" y="408" width="160" height="56" rx="10" fill="#161b22" stroke="#e34c26"/>
+<text x="692" y="442" fill="#e6edf3" font-size="15" text-anchor="middle">Country polygons</text>
+<path d="M774 436 h18" stroke="#8b949e" stroke-width="2"/><path d="M792 436 l-7 -5 v10 z" fill="#8b949e"/>
+<rect x="794" y="408" width="160" height="56" rx="10" fill="#161b22" stroke="#e34c26"/>
+<text x="874" y="442" fill="#e6edf3" font-size="15" text-anchor="middle">WebGL 3D globe</text>
+<text x="612" y="534" fill="#8b949e" font-size="15" font-weight="600">TECH STACK</text>
+<rect x="612" y="548" width="54" height="32" rx="16" fill="#e34c26" fill-opacity="0.18" stroke="#e34c26"/>
+<text x="639.0" y="569" fill="#f0f6fc" font-size="15" text-anchor="middle">HTML</text>
+<rect x="676" y="548" width="108" height="32" rx="16" fill="#e34c26" fill-opacity="0.18" stroke="#e34c26"/>
+<text x="730.0" y="569" fill="#f0f6fc" font-size="15" text-anchor="middle">JavaScript</text>
+<rect x="794" y="548" width="90" height="32" rx="16" fill="#e34c26" fill-opacity="0.18" stroke="#e34c26"/>
+<text x="839.0" y="569" fill="#f0f6fc" font-size="15" text-anchor="middle">globe.gl</text>
+<rect x="894" y="548" width="90" height="32" rx="16" fill="#e34c26" fill-opacity="0.18" stroke="#e34c26"/>
+<text x="939.0" y="569" fill="#f0f6fc" font-size="15" text-anchor="middle">three.js</text>
+<rect x="994" y="548" width="81" height="32" rx="16" fill="#e34c26" fill-opacity="0.18" stroke="#e34c26"/>
+<text x="1034.5" y="569" fill="#f0f6fc" font-size="15" text-anchor="middle">GeoJSON</text>
+</svg>
